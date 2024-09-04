@@ -1,3 +1,7 @@
+# Projeto não está finalizado ainda
+
+[Ajustes a serem realizados](https://github.com/viitoriamoreirac/car_stack_control/issues/1)
+
 # Controle de pilha de carros
 
 Este programa foi construído por [Vitória Cabral](github.com/viitoriamoreirac) como forma de obtenção de nota na matéria de **Estrutura de Dados**, lecionada pela professora **Cledja Rolim** e simula um *sistema de gerenciamento de duas pilhas de carros em um estacionamento* que controla os carros que estão estacionados e gerencia fila de espera e também traz informações sobre quantidade de manobras feitas em cada carro e se foi necessário aguardar na fila de espera ou não.
@@ -29,6 +33,8 @@ Quando um carro chegar, o programa deverá informar se tem ou não vaga e em qua
 
   // escrever essa parte ainda!
 
+  #### Placas [geradas](https://www.4devs.com.br/gerador_de_placa_automoveis) para usar como teste: 
+  NEH0446 MXF2596 LSD3686 NEL3815 NAJ0187 JUH5229 JZJ0454 MIL5822 MLH0045 LKG6604 JJE4342 JUT2170 MGG9835 EWH7499 MUH3123 HZZ8936 ILR9975 MST6396 FLM4023 LZT3505 HZU2771 LBH7820 MVB9079 JYH0912 MXD3534
 
   ## Estrutura do projeto
 

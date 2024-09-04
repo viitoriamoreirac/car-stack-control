@@ -13,6 +13,7 @@ typedef struct {
 
 // Função para receber os dados de um carro pelo terminal
 Carro criar_carro();
+int valida_placa(const char *placa);
 void imprimir_informacoes_carro(Carro carro);
 
 #endif
