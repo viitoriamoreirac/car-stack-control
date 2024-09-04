@@ -2,7 +2,7 @@
 #define MENU_H
 
 // Função que exibe o menu para adicionar ou remover carros
-void inicializar_menu(void);
+void menu(void);
 
 // Função para adicionar um carro ao estacionamento
 void adicionar_carro(void);
