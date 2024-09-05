@@ -20,6 +20,8 @@ void adicionar_carro() {
         printf("Estacionamento cheio! Deseja entrar na fila de espera? (1 = Sim, 0 = Não): ");
         int escolha;
         scanf("%d", &escolha);
+        limpar_buffer();
+
         if (escolha == 1) {
             novo_carro.fila_espera = true;
             if (enfileirar(&fila, novo_carro)) {
@@ -62,7 +64,7 @@ void remover_carro() {
     char placa[8];
     printf("Digite a placa do carro a ser removido: ");
     scanf("%7s", placa);
-    while (getchar() != '\n'); // Limpar buffer de entrada
+    limpar_buffer();
 
     int encontrou = 0; 
     PilhaCarros* beco_alvo = NULL;  // Beco onde o carro foi encontrado
@@ -138,9 +140,10 @@ void inicializar_menu() {
         printf("1. Adicionar Carro\n");
         printf("2. Remover Carro\n");
         printf("3. Consultar ocupação do estacionamento e fila de espera\n");
-        printf("0. Sair\n");
+        printf("4. Sair\n");
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
+        limpar_buffer();
         printf("-----------------------------------\n");
 
         switch (opcao) {
@@ -153,11 +156,11 @@ void inicializar_menu() {
             case 3:
                 exibir_ocupacao();
                 break;
-            case 0:
+            case 4:
                 printf("Saindo do sistema...\n");
                 break;
             default:
                 printf("Opcao invalida! Tente novamente.\n");
         }
-    } while (opcao != 0);
+    } while (opcao != 4);
 }

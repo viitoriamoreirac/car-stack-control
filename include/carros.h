@@ -10,8 +10,9 @@ typedef struct {
     bool fila_espera;
 } Carro;
 
-Carro criar_carro();
+void limpar_buffer();
 int valida_placa(const char *placa);
+Carro criar_carro();
 void imprimir_informacoes_carro(Carro carro);
 
 #endif
