@@ -1,6 +1,6 @@
 # Projeto não está finalizado ainda
 
-[Ajustes a serem realizados](https://github.com/viitoriamoreirac/car_stack_control/issues/1)
+[Ajustes a serem realizados](https://github.com/viitoriamoreirac/car-stack-control/issues/1)
 
 # Controle de pilha de carros
 
