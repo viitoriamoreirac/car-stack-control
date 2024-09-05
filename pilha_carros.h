@@ -1,21 +1,20 @@
 #ifndef PILHA_CARROS_H
 #define PILHA_CARROS_H
 
-#include "carros.h"  // Inclui a definição da estrutura Carro
+#include "carros.h"
 
-#define MAX_CARROS 2  // Define o tamanho máximo da pilha
+#define MAX_CARROS 2  // diminuir tamanho para facilitar testes
 
-// Estrutura de dados para representar uma pilha de carros em um beco
+
 typedef struct {
-    Carro carros[MAX_CARROS];  // Vetor para armazenar os carros na pilha
-    int topo;  // Índice do topo da pilha
+    Carro carros[MAX_CARROS];
+    int topo;
 } PilhaCarros;
 
-// Declaração das pilhas de carros (um para cada beco)
+
 extern PilhaCarros becoA;
 extern PilhaCarros becoB;
 
-// Funções para manipulação das pilhas
 void inicializar_pilhas();
 int pilha_cheia(PilhaCarros* beco);
 int pilha_vazia(PilhaCarros* beco);

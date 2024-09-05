@@ -3,16 +3,15 @@
 
 #include <stdbool.h>
 
-// Estrutura para representar um carro
 typedef struct {
-    char placa[8];      // Placa do carro (ID)
-    char modelo[20];    // Modelo do carro
-    int manobras;       // Número de vezes que o carro foi manobrado
-    bool fila_espera;   // Indica se o carro ficou na fila de espera (true = sim, false = não)
+    char placa[8];
+    char modelo[20]; 
+    int manobras;
+    bool fila_espera;
 } Carro;
 
-// Função para receber os dados de um carro pelo terminal
 Carro criar_carro();
+int valida_placa(const char *placa);
 void imprimir_informacoes_carro(Carro carro);
 
 #endif

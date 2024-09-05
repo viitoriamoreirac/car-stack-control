@@ -5,9 +5,9 @@
 #include <stdio.h>
 #include <string.h>
 
-// Função para adicionar um carro ao estacionamento
+
 void adicionar_carro() {
-    Carro novo_carro = criar_carro();  // Cria um novo carro com dados do usuário
+    Carro novo_carro = criar_carro();
 
     if (!pilha_cheia(&becoA)) {
         empilhar(&becoA, novo_carro);
@@ -45,19 +45,17 @@ void imprimir_becos() {
     printf("-------------------------\n\n");
 }
 
-// Função para remover um carro do estacionamento
 void remover_carro() {
     char placa[8];
     printf("Digite a placa do carro a ser removido: ");
     scanf("%7s", placa);
     while (getchar() != '\n'); // Limpar buffer de entrada
 
-    int encontrou = 0;  // Flag para verificar se o carro foi encontrado
+    int encontrou = 0; 
     PilhaCarros* beco_alvo = NULL;  // Beco onde o carro foi encontrado
     PilhaCarros temp_pilha;  // Pilha temporária para armazenar os carros removidos temporariamente
-    inicializar_pilhas(&temp_pilha);  // Certifique-se de que esta função está corretamente implementada
+    inicializar_pilhas(&temp_pilha);
 
-    // Mostra o estado atual dos becos antes da remoção
     imprimir_becos();
 
     // Procura no Beco A
@@ -117,7 +115,6 @@ void remover_carro() {
     }
 }
 
-// Função de menu para escolher adicionar ou remover carro
 void menu() {
     int opcao;
 

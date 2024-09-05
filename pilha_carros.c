@@ -1,26 +1,22 @@
 #include "pilha_carros.h"
 #include <stdio.h>
-#include <string.h>  // Inclua para usar funções de manipulação de strings
+#include <string.h>
 
 PilhaCarros becoA;
 PilhaCarros becoB;
 
-// Função para inicializar as pilhas de carros
 void inicializar_pilhas(PilhaCarros* pilha) {
     pilha->topo = -1;
 }
 
-// Função para verificar se uma pilha está cheia
 int pilha_cheia(PilhaCarros* beco) {
     return beco->topo == MAX_CARROS - 1;
 }
 
-// Função para verificar se uma pilha está vazia
 int pilha_vazia(PilhaCarros* beco) {
     return beco->topo == -1;
 }
 
-// Função para adicionar um carro na pilha (no beco)
 int empilhar(PilhaCarros* beco, Carro carro) {
     if (pilha_cheia(beco)) {
         printf("Beco cheio! Não é possível adicionar o carro.\n");
@@ -30,7 +26,7 @@ int empilhar(PilhaCarros* beco, Carro carro) {
     return 1;  // Indica sucesso ao empilhar
 }
 
-// Função para remover um carro da pilha (do beco)
+
 Carro desempilhar(PilhaCarros* beco) {
     Carro carro_vazio = { "", "", 0, false };  // Carro vazio para retornar se a pilha estiver vazia
 
