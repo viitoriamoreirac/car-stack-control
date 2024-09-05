@@ -3,11 +3,8 @@
 #include "menu.h"
 
 int main() {
-    inicializar_pilhas(&becoA);
-    inicializar_pilhas(&becoB);
-    inicializar_fila(&fila);
 
-    menu();
+    inicializar_menu();
     return 0;
 }
 

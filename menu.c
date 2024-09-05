@@ -126,8 +126,11 @@ void remover_carro() {
     }
 }
 
-void menu() {
+void inicializar_menu() {
     int opcao;
+    inicializar_pilhas(&becoA);
+    inicializar_pilhas(&becoB);
+    inicializar_fila(&fila);
 
     do {
         printf("\n--- Menu de Estacionamento ---\n");
