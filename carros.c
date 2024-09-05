@@ -8,7 +8,7 @@
 
 
 int valida_placa(const char *placa) {
-    // Validação do formato da placa usando regex
+    // Validação usando regex
     regex_t regex;
     int retorno_regex;
     const char *padrao = "^[A-Z]{3}[0-9][0-9A-Z][0-9]{2}$";

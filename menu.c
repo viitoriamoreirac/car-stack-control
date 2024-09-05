@@ -42,6 +42,18 @@ void imprimir_becos() {
     for (int i = 0; i <= becoB.topo; i++) {
         printf("Posição %d: %s\n", i, becoB.carros[i].placa);
     }
+
+    printf("Fila de Espera:\n");
+    if (fila.tamanho == 0) {
+        printf("Fila vazia.\n");
+    } else {
+        int pos = 0;
+        for (int i = fila.frente; i != fila.tras; i = (i + 1) % MAX_FILA_ESPERA) {
+            printf("Posição %d: %s\n", pos++, fila.carros[i].placa);
+        }
+        printf("Posição %d: %s\n", pos, fila.carros[fila.tras].placa);
+    }
+
     printf("-------------------------\n\n");
 }
 
@@ -87,7 +99,6 @@ void remover_carro() {
             printf("Carro %s foi manobrado.\n", temp_carro.placa);
         }
 
-        // Remove o carro alvo
         if (beco_alvo->topo >= 0 && strcmp(beco_alvo->carros[beco_alvo->topo].placa, placa) == 0) {
             Carro carro_removido = desempilhar(beco_alvo);
             imprimir_informacoes_carro(carro_removido);
@@ -97,7 +108,7 @@ void remover_carro() {
             return;
         }
 
-        // Recoloca os carros na pilha original
+        // Devolvendo os carros para pilha original
         while (temp_pilha.topo >= 0) {
             Carro temp_carro = desempilhar(&temp_pilha);
             empilhar(beco_alvo, temp_carro);

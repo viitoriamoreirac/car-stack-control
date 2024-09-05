@@ -6,10 +6,10 @@
 #define MAX_FILA_ESPERA 10
 
 typedef struct {
-    Carro carros[MAX_FILA_ESPERA];  // Array de carros na fila de espera
-    int frente;  // Índice do carro na frente da fila
-    int tras;    // Índice do carro no final da fila
-    int tamanho; // Número atual de carros na fila
+    Carro carros[MAX_FILA_ESPERA];
+    int frente;
+    int tras;
+    int tamanho;
 } FilaEspera;
 
 extern FilaEspera fila;

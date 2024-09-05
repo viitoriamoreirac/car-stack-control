@@ -26,7 +26,7 @@ int enfileirar(FilaEspera* fila, Carro carro) {
     fila->carros[fila->tras] = carro;
     fila->tamanho++;
     return 1;  // carro foi enfileirado
-
+}
 
 Carro desenfileirar(FilaEspera* fila) {
     Carro carro_removido = {0};  // inicializa um carro vazio
