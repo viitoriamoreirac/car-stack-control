@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "carros.h": "c"
+        "carros.h": "c",
+        "fila_de_espera.h": "c",
+        "menu.h": "c",
+        "pilha_carros.h": "c"
     }
 }

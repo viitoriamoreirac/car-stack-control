@@ -1,6 +1,6 @@
-#include "carros.h"
-#include "pilha_carros.h"
-#include "fila_de_espera.h"
+#include "../include/carros.h"
+#include "../include/pilha_carros.h"
+#include "../include/fila_de_espera.h"
 
 #include <regex.h>
 #include <stdio.h>

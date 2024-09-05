@@ -1,4 +1,5 @@
-#include "fila_de_espera.h"
+#include "../include/fila_de_espera.h"
+
 #include <stdio.h>
 
 FilaEspera fila;

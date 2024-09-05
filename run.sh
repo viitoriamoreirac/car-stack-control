@@ -1,7 +1,7 @@
-gcc carros.c fila_de_espera.c main.c menu.c pilha_carros.c -o executar
+gcc src/carros.c src/fila_de_espera.c src/main.c src/menu.c src/pilha_carros.c -o bin/executar
 
 if [ $? -eq 0 ]; then
-    ./executar
+    ./bin/executar
 else
     echo "Erro na compilação."
 fi

@@ -1,7 +1,8 @@
-#include "menu.h"
-#include "pilha_carros.h"
-#include "carros.h"
-#include "fila_de_espera.h"
+#include "../include/menu.h"
+#include "../include/pilha_carros.h"
+#include "../include/carros.h"
+#include "../include/fila_de_espera.h"
+
 #include <stdio.h>
 #include <string.h>
 
@@ -140,6 +141,7 @@ void inicializar_menu() {
         printf("0. Sair\n");
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
+        printf("-----------------------------------\n");
 
         switch (opcao) {
             case 1:
