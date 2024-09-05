@@ -30,7 +30,7 @@ void adicionar_carro() {
     }
 }
 
-void imprimir_becos() {
+void exibir_ocupacao() {
     printf("\n--- Estado dos Becos ---\n");
 
     printf("Beco A:\n");
@@ -45,7 +45,7 @@ void imprimir_becos() {
 
     printf("Fila de Espera:\n");
     if (fila.tamanho == 0) {
-        printf("Fila vazia.\n");
+        printf("Não existem carros na fila de espera.\n");
     } else {
         int pos = 0;
         for (int i = fila.frente; i != fila.tras; i = (i + 1) % MAX_FILA_ESPERA) {
@@ -68,7 +68,7 @@ void remover_carro() {
     PilhaCarros temp_pilha;  // Pilha temporária para armazenar os carros removidos temporariamente
     inicializar_pilhas(&temp_pilha);
 
-    imprimir_becos();
+    exibir_ocupacao();
 
     // Procura no Beco A
     for (int i = 0; i <= becoA.topo; i++) {
@@ -136,6 +136,7 @@ void inicializar_menu() {
         printf("\n--- Menu de Estacionamento ---\n");
         printf("1. Adicionar Carro\n");
         printf("2. Remover Carro\n");
+        printf("3. Consultar ocupação do estacionamento e fila de espera\n");
         printf("0. Sair\n");
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
@@ -146,6 +147,9 @@ void inicializar_menu() {
                 break;
             case 2:
                 remover_carro();
+                break;
+            case 3:
+                exibir_ocupacao();
                 break;
             case 0:
                 printf("Saindo do sistema...\n");
