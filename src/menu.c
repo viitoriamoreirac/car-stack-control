@@ -38,12 +38,12 @@ void exibir_ocupacao() {
 
     printf("Beco A:\n");
     for (int i = 0; i <= becoA.topo; i++) {
-        printf("Posição %d: %s\n", i, becoA.carros[i].placa);
+        printf("Posição %d: %s\n", i+1, becoA.carros[i].placa);
     }
 
     printf("Beco B:\n");
     for (int i = 0; i <= becoB.topo; i++) {
-        printf("Posição %d: %s\n", i, becoB.carros[i].placa);
+        printf("Posição %d: %s\n", i+1, becoB.carros[i].placa);
     }
 
     printf("Fila de Espera:\n");
