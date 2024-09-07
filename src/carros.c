@@ -62,7 +62,7 @@ Carro criar_carro() {
 
     // Continua pedindo até que a placa seja válida e não duplicada
     while (!placa_valida) {
-        printf("Digite a placa do carro (máximo 7 caracteres): ");
+        printf("Digite a placa do carro (Letras maiusculas): ");
         scanf("%7s", novo_carro.placa);
         limpar_buffer();
 
@@ -84,7 +84,6 @@ Carro criar_carro() {
 }
 
 void imprimir_informacoes_carro(Carro carro) {
-    printf("Carro: %s\n", carro.placa);
-    printf("Número de manobras: %d\n", carro.manobras);
-    printf("Fila de espera: %s\n", carro.fila_espera ? "Sim" : "Não");
+    printf("Carro com placa %s de modelo %s teve um total de %d manobras\n", carro.placa, carro.modelo, carro.manobras);
+    printf("Participou da fila de espera: %s\n", carro.fila_espera ? "Sim" : "Não");
 }

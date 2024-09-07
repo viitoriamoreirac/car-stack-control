@@ -3,7 +3,7 @@
 
 #include "carros.h"
 
-#define MAX_CARROS 2  // diminuir tamanho para facilitar testes
+#define MAX_CARROS 10  // diminuir tamanho para facilitar testes
 
 
 typedef struct {
